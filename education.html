@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>EDUCATION</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+background-color:#222327;
+font-family:sans-serif;
+padding:30px;
+}
+.header{
+text-align:center;
+color:#fff;
+padding:1rem;
+position:absolute;
+top:10%;
+}
+.header:after{
+content:'';
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+height:4px;
+width:100px;
+background-color:#2ecc71;
+}
+.cards{
+display:grid;
+gap:30px;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+grid-template-columns:1fr 1fr 1fr;
+align-items:center;
+}
+.card{
+background-color:white;
+padding:30px;
+border-radius:12px;
+transition:height 0.3s ease-in-out;
+margin-top:100px;
+}
+.card .img-hold{
+width:100%;
+height:150px;
+border-radius:8px;
+margin-bottom:13px;
+transition:transform 0.3s ease-in-out;
+}
+.card:nth-child(1) .img-hold{
+background:url(school.jfif);
+}
+.card:nth-child(2) .img-hold{
+background:url(school.jfif);
+}
+.card:nth-child(3) .img-hold{
+background:url(nec.jfif);
+}
+.card h2, .card p{
+margin-bottom:15px;
+}
+.card p{
+opacity:0;
+transition:opacity 0.3s ease-in-out;
+transition-delay: 0.1s;
+}
+.card a{
+opacity:0;
+transition:opacity 0.3s ease-in-out;
+transition-delay: 0.1s;
+display:inline-block;
+color:white;
+text-decoration:none;
+padding:15px;
+border-radius:4px;
+background-color:red;
+}
+.card-content{
+height:35px;
+overflow:hidden;
+transition:height 0.3s ease-in-out;
+}
+.card:hover .img-hold{
+transform:scale(0.9);
+margin-top:-120px;
+}
+.card:hover .card-content{
+height:230px;
+overflow:visible;
+}
+.card:hover p, .card:hover a{
+opacity:1;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<b><h1>EDUCATION</h1></b>
+</div>
+<div class="cards">
+<div class="card">
+<div class="img-hold"></div>
+<div class="card-content">
+<h2>SSLC  2018-2019</h2>
+<h2>91.2%</h2>
+<p>Andrews Matriculation Higher Secondary School,Vickramasingapuram.</p>
+<a href="https://en.wikipedia.org/wiki/Andrews_Matriculation_School">Read More</a>
+</div>
+</div>
+<div class="card">
+<div class="img-hold"></div>
+<div class="card-content">
+<h2>HSC  2020-2021</h2>
+<h2>93.8%</h2>
+<p>Andrews Matriculation Higher Secondary School,Vickramasingapuram.</p>
+<a href="https://en.wikipedia.org/wiki/Andrews_Matriculation_School">Read More</a>
+</div>
+</div>
+<div class="card">
+<div class="img-hold"></div>
+<div class="card-content">
+<h2>B.E - CSE</h2>
+<h2>CGPA:8.16</h2>
+<p>National Engineering College,Kovilpatti.</p>
+<a href="https://en.wikipedia.org/wiki/National_Engineering_College">Read More</a>
+</div>
+</div>
+</div>
+<a href="Projects.html" class="button">
+<i class="fas fa-arrow-right"></i>
+</a>
+</body>
+</html>

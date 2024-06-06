@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>MY PROJECT</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+body{
+background-color:#222327;
+}
+.header{
+text-align:center;
+color:#fff;
+padding:0.5rem;
+position:relative;
+}
+.header:after{
+content:'';
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+height:4px;
+width:100px;
+background-color:#2ecc71;
+}
+.card-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+margin-top:100px;
+}
+.card{
+width:325px;
+background-color:#f4f4f4;
+border-radius:10px;
+box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);
+overflow:hidden;
+transition:transform 0.6s ease;
+}
+.card:hover{
+transform:translateY(-20px);
+}
+.card img{
+width:100%;
+height:auto;
+object-fit:cover;
+}
+.card-content{
+padding:20px;
+}
+.card-content h1{
+font-size:24px;
+margin-bottom:10px;
+}
+.card-content p{
+font-size:15px;
+color:#666;
+margin-bottom:20px;
+}
+.card-button{
+display:inline-block; 
+background-color:#3498db;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+padding:8px 16px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<b><h1>MY PROJECTS</h1></b>
+</div>
+<div class="card-container">
+<div class="card">
+<img src="food.png">
+<div class="card-content">
+<h1>FOOD DELIVERY MANAGEMENT USING ORACLE APEX</h1>
+<p>An online food ordering system has been planned wherever the purchasers will orders the food and avoid the hassles of watching
+for the order to be taken by the waiter. The exploitation of the application, the tip users register online, scan the E-menu card, and choose the food from the e-menu card to order food online. The Online Food Ordering System deals with putting orders of food from varied restaurants.</p>
+<a href="" class="card-button">Read More</a>
+</div>
+</div>
+<div class="card">
+<img src="atm2.png">
+<div class="card-content">
+<h1>GUI ATM SIMULATOR USING JAVA SWING</h1>
+<p>This project aims to provide a user-friendly interface for performing common ATM operations, such as checking account balances, making deposits, withdrawing funds, and transferring money between accounts.As an admin, we can register a new user, update an existing account, delete an account and view the record of any account. As a customer, we can deposit money, withdraw money, check the balance,
+transfer the money to another account and print a receipt.</p>
+<a href="" class="card-button">Read More</a>
+</div>
+</div>
+<div class="card">
+<img src="talk the talk.png">
+<div class="card-content">
+<h1>SOCIAL MEDIA PLATFORM USING JSP</h1>
+<p>The primary objectives of our JSP-based social media mini-project include user registration, authentication, profile management, posting and sharing of content, friend requests, news feed creation, likes and comments, notifications, and secure database management.This platform will enable users to create
+accounts, post updates, connect with friends, and interact with each other.</p>
+<a href="" class="card-button">Read More</a>
+</div>
+</div>
+</div>
+<a href="skills.html" class="button">
+<i class="fas fa-arrow-right"></i>
+</a>
+</body>
+</html>
